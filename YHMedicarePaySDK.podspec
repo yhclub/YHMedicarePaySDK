@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHMedicarePaySDK'
-  s.version          = '0.1.1'
+  s.version          = '10.1.2'
   s.summary          = '医保移动支付SDK'
 
 # This description is used to generate tags and improve search results.
@@ -19,28 +19,17 @@ Pod::Spec.new do |s|
 
   s.description      = '集成在线医保移动结算功能的聚合支付SDK. 厦门市易联众易惠科技有限公司 All rights reserved.'
 
-  s.homepage         = 'https://github.com/jagtu/YHMedicarePaySDK'
+  s.homepage         = 'https://github.com/XmYlzYhkj/YHMedicarePaySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jagtu' => '42318168@qq.com' }
-  s.source           = { :svn => 'https://120.42.37.94:2443/svn/APP/iOS/YHComponent/YHMedicarePaySDK', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/XmYlzYhkj/YHMedicarePaySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation'
   s.libraries        = 'z', 'c++', 'sqlite3'
-  
-  #s.dependency 'YYModel', '1.0.4'
-  #s.dependency 'Reachability', '~> 3.2'
-  #s.dependency 'AFNetworking','~>3.1.0'
-  #s.dependency 'MJRefresh', '3.1.12'
-  #s.dependency 'SVProgressHUD', '2.1.2'
-  #s.dependency 'OpenUDID', '~> 1.0.0'
-  #s.dependency 'SAMKeychain', '~> 1.5.2'
-  #s.dependency 'SDAutoLayout', '~> 2.2.0'
-  #s.dependency 'YHNetSDK'
-  #s.dependency 'YHEnDecriptionSDK'
   
   s.dependency 'YHCommonSDK', '~> 2.0.7'
   s.dependency 'YHOnePaySDK', '~> 1.1.0'
@@ -50,22 +39,6 @@ Pod::Spec.new do |s|
   
   s.prefix_header_file = 'YHMedicarePaySDK/Classes/YHMedicarePaySDK.pch'
   
-  s.resources = 'YHMedicarePaySDK/Assets/**/*.{bundle}'
-  
-  # s.resource_bundles = {
-  #   'YHMedicarePaySDK' => ['YHMedicarePaySDK/Assets/*.png']
-  # }
-  
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  
-  s.default_subspec = 'source'
-  
-  s.subspec 'source' do |source|
-      source.source_files = 'YHMedicarePaySDK/Classes/**/*.{h,m}'
-  end
-  
-  s.subspec 'frameWork' do |frameWork|
-      frameWork.ios.vendored_frameworks = 'YHMedicarePaySDK/FrameWork/*.framework'
-  end
+  s.vendored_frameworks = ["Frameworks/*.framework"]
   
 end
