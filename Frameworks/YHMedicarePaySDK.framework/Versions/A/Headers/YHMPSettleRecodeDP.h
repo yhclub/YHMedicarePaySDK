@@ -23,6 +23,7 @@
  * queryType： onlineRecordDetail
 */
 -(void)startWithBillSn:(NSString *)billSn;
+-(void)startWithTraceNo:(NSString *)traceNo;
 
 
 //响应

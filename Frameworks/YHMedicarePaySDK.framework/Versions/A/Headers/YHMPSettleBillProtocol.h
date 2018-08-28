@@ -115,6 +115,10 @@
 //处方时间
 -(NSString *)getRecipeTime;
 
+@optional
+
+//其他扩展参数
+-(NSDictionary *)getExtra;
 
 @end
 
