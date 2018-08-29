@@ -44,7 +44,7 @@
  *  查询已结算记录
  *  ->展示已结算记录列表页
  */
-+(void)gotoSettledRecodeVC:(YHMPPrescModel *)prescModel;
++(void)gotoSettledRecodeVC;
 
 
 

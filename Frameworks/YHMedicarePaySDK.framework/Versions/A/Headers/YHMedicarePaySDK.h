@@ -36,7 +36,7 @@
 
 /**
  *  查询已结算记录
- *  ->选择医院 ->展示已结算记录列表页
+ *  ->展示已结算记录列表页
  *
  *  @param token     用户令牌
  *  @param completionBlock 结算结果回调Block。

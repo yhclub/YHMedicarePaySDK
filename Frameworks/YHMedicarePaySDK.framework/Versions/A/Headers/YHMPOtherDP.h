@@ -8,7 +8,7 @@
 #import "YHMPBaseDP.h"
 #import "YHMPOtherParamModel.h"
 #import "YHMPChannelRespModel.h"
-#import "YHSettleRechargeRespModel.h"
+#import "YHMPSettleRechargeRespModel.h"
 #import "YHMPUserRespModel.h"
 
 @interface YHMPOtherDP : YHMPBaseDP
@@ -24,7 +24,7 @@
 @property(nonatomic,strong)YHMPChannelRespModel *channelRespModel;
 
 //结算RespModel
-@property(nonatomic,strong)YHSettleRechargeRespModel *settleRespModel;
+@property(nonatomic,strong)YHMPSettleRechargeRespModel *settleRespModel;
 
 //用户信息RespModel
 @property(nonatomic,strong)YHMPUserRespModel *userInfoRespModel;

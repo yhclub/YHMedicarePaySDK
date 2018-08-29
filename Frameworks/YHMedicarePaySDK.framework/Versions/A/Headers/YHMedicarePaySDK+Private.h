@@ -47,11 +47,6 @@
  */
 - (void)querySettleRecode;
 
-/**
- *  @param appId        (已选医院)医院应用AppId
- */
-- (void)querySettleRecodeWithAppId:(NSString *)appId;
-
 
 - (BOOL)didReceiveNotification:(NSDictionary *)userInfo;
 

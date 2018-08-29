@@ -8,13 +8,13 @@
 
 #import "YHMPBaseDP.h"
 
-#import "YHSettleRechargeRespModel.h"
+#import "YHMPSettleRechargeRespModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YHMPSettleRechargeDP : YHMPBaseDP
 
-@property(nonatomic,strong)YHSettleRechargeRespModel *model;
+@property(nonatomic,strong)YHMPSettleRechargeRespModel *model;
 
 @property(nonatomic,strong)NSString *depositType;
 @property(nonatomic,strong)NSString *rechargeAmount;//金额

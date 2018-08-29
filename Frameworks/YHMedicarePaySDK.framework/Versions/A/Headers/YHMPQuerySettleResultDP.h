@@ -7,11 +7,11 @@
 //
 
 #import "YHMPBaseDP.h"
-#import "YHSettleResultRespModel.h"
+#import "YHMPSettleResultRespModel.h"
 
 @interface YHMPQuerySettleResultDP : YHMPBaseDP
 
-@property(nonatomic,strong)YHSettleResultRespModel *model;
+@property(nonatomic,strong)YHMPSettleResultRespModel *model;
 
 @property(nonatomic,strong)NSString *traceNo;
 

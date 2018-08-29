@@ -7,14 +7,18 @@
 
 #import <YHCommonSDK/YHCommonSDK.h>
 #import "YHMPSettleDetailPT.h"
-#import "YHMPSettleRecodeDP.h"
+#import "YHMPSettleRecodeDetailDP.h"
+#import "YHMPSettleResultModel.h"
 
 @interface YHMPSettleDetailVC : YHBaseViewController <YHNetProtocol>
 
 @property(nonatomic,strong)YHMPSettleDetailPT *presenter;
 
-@property(nonatomic,strong)YHMPSettleRecodeDP *dataProvider;
+@property(nonatomic,strong)YHMPSettleRecodeDetailDP *dataProvider;
 
+@property(nonatomic,strong)YHMPSettleResultModel *resultModel;
 
+-(instancetype)initWithBillSn:(NSString *)billSn;
+-(instancetype)initWithTraceNo:(NSString *)traceNo;
 
 @end

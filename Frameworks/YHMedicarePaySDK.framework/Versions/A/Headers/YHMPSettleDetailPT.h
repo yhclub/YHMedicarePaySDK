@@ -6,10 +6,10 @@
 //
 
 #import "YHMPayTabelViewPT.h"
-#import "YHMPSettleRecodeDP.h"
+#import "YHMPSettleRecodeDetailDP.h"
 
 @interface YHMPSettleDetailPT : YHMPayTabelViewPT
 
-@property(nonatomic,weak)YHMPSettleRecodeDP *dataProvider;
+@property(nonatomic,weak)YHMPSettleRecodeDetailDP *dataProvider;
 
 @end
