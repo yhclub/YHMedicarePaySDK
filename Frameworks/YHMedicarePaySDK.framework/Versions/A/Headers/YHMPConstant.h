@@ -30,11 +30,7 @@ FOUNDATION_EXPORT CGFloat const YHMPCornerRadius;
 
 FOUNDATION_EXPORT CGFloat const YHMPCellHeight;
 
-/**
- *  @param errorCode 错误码
- *  @param message   提示信息
- *  @param resultDic 其他返回结果
- */
+
 typedef void(^YHMPPayCompletionBlock)(NSString * respCode,NSString * respMsg,NSDictionary * resultDic);
 
 

@@ -7,10 +7,12 @@
 
 #import <Foundation/Foundation.h>
 #import "YHMPSettleBillProtocol.h"
+@class YHMPTakeMedicineModel;
 
 @interface YHMPBillModel : NSObject<YHMPSettleBillProtocol>
 
 @property(nonatomic,copy)NSString *voucherNo;      //单据号
+@property(nonatomic,copy)NSString *totalFee;      //费用总额
 @property(nonatomic,copy)NSString *zhzfe0;      //账户支付额
 @property(nonatomic,copy)NSString *grzfe0;      //个人支付额
 @property(nonatomic,copy)NSString *jjzfe0;      //基金支付额
@@ -28,7 +30,7 @@
 @property(nonatomic,copy)NSString *mzbzje;      //民政补助金额
 @property(nonatomic,copy)NSString *patientType;      //结算身份
 @property(nonatomic,copy)NSString *settleChannel;      //结算渠道
-@property(nonatomic,copy)NSString *drugState;      //取药状态
+@property(nonatomic,copy)NSString *drugState;      //取药状态 =2时，表示无取药信息，=1时，取药信息在extra里
 @property(nonatomic,copy)NSString *receiptState;      //发票状态;
 @property(nonatomic,copy)NSString *extState;      //平台交易状态
 @property(nonatomic,copy)NSString *cardNo;      //平台交易卡号
@@ -39,9 +41,26 @@
 @property(nonatomic,copy)NSString *billSn;      //平台交易流水
 
 //待扣费单据明细集合     List
-@property(nonatomic,strong)NSArray *detailList;
+@property(nonatomic,strong)NSArray *waitPayDetailVOs;
 
 //扩展出参
-@property(nonatomic,strong)NSDictionary *extra;
+@property(nonatomic,strong)YHMPTakeMedicineModel *extra;
+
+//交易时间
+-(NSString *)getTransactionTime;
+
+-(BOOL)havDrugInfo;
+-(BOOL)havDrugNavigation;
+
+@end
+
+
+@interface YHMPTakeMedicineModel : NSObject
+
+@property(nonatomic,copy)NSString *remark;      //取药说明
+@property(nonatomic,copy)NSString *drugWindow;      //取药窗口
+@property(nonatomic,copy)NSString *pickDrugNo;      //取药号数
+@property(nonatomic,copy)NSString *drugQrCode;      //取药二维码
+@property(nonatomic,copy)NSString *callSn;      //HIS取药流水号，有的HIS取药二维码是用它生成的
 
 @end

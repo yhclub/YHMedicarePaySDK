@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YHMPPrescDetailDP : YHMPBaseDP
 
-@property(nonatomic,strong)id<YHMPSettleBillProtocol> model;
+@property(nonatomic,strong)YHMPPrescModel *model;
 
 @property(nonatomic,strong)NSMutableArray *presItemArray;
 

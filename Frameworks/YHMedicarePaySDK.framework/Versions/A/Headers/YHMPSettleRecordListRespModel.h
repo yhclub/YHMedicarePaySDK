@@ -7,9 +7,19 @@
 //
 
 #import "YHMPBaseRespModel.h"
+@class YHMPSettleRecodeListParamModel;
 
 @interface YHMPSettleRecordListRespModel : YHMPBaseRespModel
 
-@property(nonatomic,strong)NSArray *param;
+@property(nonatomic,strong)YHMPSettleRecodeListParamModel *param;
 
 @end
+
+@interface YHMPSettleRecodeListParamModel : NSObject
+
+@property(nonatomic,strong)NSArray *bills;
+@property(nonatomic,copy)NSString *len;
+@property(nonatomic,copy)NSString *totalCount;
+
+@end
+

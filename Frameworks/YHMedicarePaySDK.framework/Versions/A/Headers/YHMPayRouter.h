@@ -37,7 +37,7 @@
 /**
  * ->结算成功完成
  */
-+(void)gotoSettleDetailVC:(YHMPPrescModel *)prescModel;
++(void)gotoSettleSuccDetailVC:(NSString *)traceNo;
 
 
 /**

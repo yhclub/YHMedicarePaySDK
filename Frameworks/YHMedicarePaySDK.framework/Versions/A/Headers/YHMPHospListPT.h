@@ -19,6 +19,4 @@ typedef void(^YHMPHospListChooseBlock)(YHMPHospModel * selectedModel,NSArray *ho
 
 @property(nonatomic,copy)YHMPHospListChooseBlock actionAfterChooseBlock;
 
--(id)initWithView:(UITableView *)view;
-
 @end

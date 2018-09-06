@@ -39,8 +39,7 @@
  *  ->展示已结算记录列表页
  *
  *  @param token     用户令牌
- *  @param completionBlock 结算结果回调Block。
- *  注：结算成功后，商户服务端也会收到异步通知。最终结算成功请根据服务端异步通知为准。
+ *  @param completionBlock 失败回调Block。主要处理token过期等错误
  */
 + (void)querySettledRecodeWithToken:(NSString *)token
                          completion:(YHMPPayCompletionBlock)completionBlock;
@@ -51,10 +50,25 @@
  *  处理包括待结算处方消息、结算成功消息(如自行展示结算结果则不展示)
  *  消息来源：->移动医保支付平台 ->商户服务端 ->商户APP ->SDK
  *
- *  @param userInfo      消息参数或者启动参数
+ *  @param token     用户令牌
+ *  @param userInfo  消息参数，userInfo中有key:ylzSDKParams
  *  @return 是否处理，YES表示SDK处理该消息并在处理完成时回调block，NO则商户APP自行处理
  */
-+ (BOOL)didReceiveNotification:(NSDictionary *)userInfo;
++ (BOOL)processNotification:(NSDictionary *)userInfo
+                  withToken:(NSString *)token;
+
+
+/**
+ *  处理第三方app支付完成后跳回商户app携带的支付结果Url
+ *
+ *  @param token     用户令牌
+ *  @param openURL        支付结果url
+ *  @param completionBlock  支付结果回调Block（商户app已被系统kill掉，才会回调此block）
+ *  注：如果商户app已被系统kill掉，则支付失败时打开待结算处方页面，其它情况打开结算记录页面
+ */
++ (void)processOrderWithToken:(NSString *)token
+                      openURL:(NSURL *)openURL
+                   completion:(YHMPPayCompletionBlock)completionBlock;
 
 
 /**

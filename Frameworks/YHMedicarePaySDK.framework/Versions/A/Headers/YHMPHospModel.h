@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YHMPHospModel : NSObject
+@interface YHMPHospModel : NSObject<NSCopying>
 
 @property(nonatomic,copy)NSString *hospName;      //医院名称
 @property(nonatomic,copy)NSString *appId;         //医院appid

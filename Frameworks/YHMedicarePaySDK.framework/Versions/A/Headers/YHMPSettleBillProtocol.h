@@ -80,7 +80,9 @@
 
 //其他优惠
 -(double)getOtherDerateAmount;
+
 /**
+ * 账户信息
  */
 //医保账户余额
 -(double)getInsuranceBalance;
@@ -106,8 +108,6 @@
 /**
  * --- 就诊信息 ---
  */
-//医院名称
--(NSString *)getHospName;
 //科室名称
 -(NSString *)getDepaName;
 //医生姓名
@@ -119,6 +119,12 @@
 
 //其他扩展参数
 -(NSDictionary *)getExtra;
+
+//医院名称
+-(NSString *)getHospName;
+
+//医院地址
+-(NSString *)getHospUrl;
 
 @end
 

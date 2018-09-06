@@ -6,18 +6,10 @@
 //
 
 #import "YHMPBaseRespModel.h"
-@class YHMPSettleRecodeRespParamModel;
+#import "YHMPBillModel.h"
 
 @interface YHMPSettleRecodeRespModel : YHMPBaseRespModel
 
-@property(nonatomic,strong)YHMPSettleRecodeRespParamModel *param;
-
-@end
-
-@interface YHMPSettleRecodeRespParamModel : NSObject
-
-@property(nonatomic,strong)NSArray *bills;
-@property(nonatomic,copy)NSString *len;
-@property(nonatomic,copy)NSString *totalCount;
+@property(nonatomic,strong)YHMPBillModel *param;
 
 @end

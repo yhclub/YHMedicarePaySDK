@@ -9,7 +9,7 @@
 
 @interface YHMPSettleCashierDP : NSObject
 
-@property(nonatomic,strong)id<YHMPSettleBillProtocol> model;
+@property(nonatomic,strong)YHMPPrescModel *model;
 
 @property(nonatomic,strong)NSMutableArray *dataArray;
 

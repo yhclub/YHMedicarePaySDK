@@ -27,11 +27,14 @@
 @property(nonatomic,copy)NSString *unit;        //单位
 @property(nonatomic,copy)NSString *fee;                 //总费用
 @property(nonatomic,copy)NSString *recipeTime;          //处方时间
+@property(nonatomic,copy)NSString *receiptItemNo;
 @property(nonatomic,copy)NSString *recipeDoctorName;    //处方医生名称
 @property(nonatomic,copy)NSString *mediSettleState;     //结算标志
 @property(nonatomic,copy)NSString *mediSettleTime;      //结算时间
 @property(nonatomic,copy)NSString *dosageUnit;          //用量单位
 @property(nonatomic,copy)NSString *pillDay;             //药品天数
 @property(nonatomic,copy)NSString *note;        //备注
+
+@property(nonatomic,copy)NSString *isMedicalItem;
 
 @end

@@ -12,9 +12,6 @@
 
 @interface YHMPPrescModel : NSObject<YHMPSettleBillProtocol>
 
-@property(nonatomic,copy)NSString *appId;
-@property(nonatomic,copy)NSString *hospName;
-
 @property(nonatomic,copy)NSString *hisCustId;       //患者HIS档案编号
 @property(nonatomic,copy)NSString *registerNo;      //定点机构业务流水号
 @property(nonatomic,copy)NSString *voucherNo;       //单据号
@@ -62,5 +59,10 @@
 
 //扩展出参（grzfe0个人支付额、ybzfe0医保支付额、hopVoucherId平台单据号）
 @property(nonatomic,strong)NSDictionary *extra;
+
+//-------//
+@property(nonatomic,copy)NSString *appId;
+@property(nonatomic,copy)NSString *hospName;
+@property(nonatomic,copy)NSString *hospUrl;
 
 @end

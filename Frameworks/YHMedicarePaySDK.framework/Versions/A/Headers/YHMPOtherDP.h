@@ -10,6 +10,8 @@
 #import "YHMPChannelRespModel.h"
 #import "YHMPSettleRechargeRespModel.h"
 #import "YHMPUserRespModel.h"
+#import "YHMPSmsRespModel.h"
+
 
 @interface YHMPOtherDP : YHMPBaseDP
 
@@ -28,6 +30,9 @@
 
 //用户信息RespModel
 @property(nonatomic,strong)YHMPUserRespModel *userInfoRespModel;
+
+//用户信息RespModel
+@property(nonatomic,strong)YHMPSmsRespModel *smsRespModel;
 
 //获取用户信息
 +(YHMPOtherDP *)getUserInfoDPWithToken:(NSString *)token;

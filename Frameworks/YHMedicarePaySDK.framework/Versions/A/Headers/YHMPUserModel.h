@@ -15,10 +15,12 @@
 @property(nonatomic,copy)NSString * userToken;
 
 @property(nonatomic,copy)NSString *userName;        //用户姓名
-@property(nonatomic,copy)NSString *contactNumber;           //用户电话
+@property(nonatomic,copy)NSString *contactNumber;   //用户电话
+@property(nonatomic,copy)NSString *phone;
 @property(nonatomic,copy)NSString *cardNo;          //卡号
 @property(nonatomic,copy)NSString *cardType;        //卡类型
 @property(nonatomic,copy)NSString *accountType;     //帐户类型
+@property(nonatomic,copy)NSString *openId;          //MMP的授权id
 
     //---nullable---//
 @property(nonatomic,copy)NSString *idNo;            //证件号

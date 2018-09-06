@@ -14,5 +14,6 @@
 @property(nonatomic,strong)YHMPSettleResultRespModel *model;
 
 @property(nonatomic,strong)NSString *traceNo;
+@property(nonatomic,strong)NSString *outTradeNo;
 
 @end

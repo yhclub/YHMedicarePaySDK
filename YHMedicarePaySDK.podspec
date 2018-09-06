@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHMedicarePaySDK'
-  s.version          = '1.0.1.5'
+  s.version          = '1.0.1.6'
   s.summary          = '医保移动支付SDK'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation'
+  s.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation', 'WebKit'
   s.libraries        = 'z', 'c++', 'sqlite3'
   
 
