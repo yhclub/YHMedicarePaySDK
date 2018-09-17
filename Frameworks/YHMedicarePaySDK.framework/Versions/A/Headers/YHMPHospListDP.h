@@ -8,6 +8,8 @@
 
 #import "YHMPHospListRespModel.h"
 
+#define HospListAppType @"14"
+
 @interface YHMPHospListDP : YHMPBaseDP
 
 @property(nonatomic,strong)YHMPHospListRespModel *model;

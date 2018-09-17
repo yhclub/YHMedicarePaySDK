@@ -22,6 +22,7 @@
 //resNote、callSn、responseContent(JSON）
 
 -(BOOL)isSuccess;
+-(BOOL)isFailed;
 -(BOOL)isInProcess;
 -(BOOL)isInit;
 

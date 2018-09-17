@@ -16,7 +16,10 @@
 
 @property(nonatomic,strong)YHMPSettleRecodeDetailDP *dataProvider;
 
+@property(nonatomic,strong)YHMPQuerySettleResultDP *settleResultDP;
+
 @property(nonatomic,strong)YHMPSettleResultModel *resultModel;
+@property(nonatomic,strong)YHMPPrescModel *prescModel;
 
 -(instancetype)initWithBillSn:(NSString *)billSn;
 -(instancetype)initWithTraceNo:(NSString *)traceNo;

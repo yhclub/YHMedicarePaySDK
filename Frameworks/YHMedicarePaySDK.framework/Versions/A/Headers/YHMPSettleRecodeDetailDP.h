@@ -26,4 +26,6 @@
 //详情数据
 @property(nonatomic,strong)NSMutableArray *detailArray;
 
+-(void)reloadDetailDataWithModel:(id<YHMPSettleBillProtocol>)billModel;
+
 @end

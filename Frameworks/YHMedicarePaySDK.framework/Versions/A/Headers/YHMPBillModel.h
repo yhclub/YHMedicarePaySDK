@@ -46,9 +46,6 @@
 //扩展出参
 @property(nonatomic,strong)YHMPTakeMedicineModel *extra;
 
-//交易时间
--(NSString *)getTransactionTime;
-
 -(BOOL)havDrugInfo;
 -(BOOL)havDrugNavigation;
 

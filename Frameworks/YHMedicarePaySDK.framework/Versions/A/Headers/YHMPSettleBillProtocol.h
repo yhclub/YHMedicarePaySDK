@@ -117,8 +117,11 @@
 
 @optional
 
+//交易时间
+-(NSString *)getTransactionTime;
+
 //其他扩展参数
--(NSDictionary *)getExtra;
+-(id)getExtra;
 
 //医院名称
 -(NSString *)getHospName;
