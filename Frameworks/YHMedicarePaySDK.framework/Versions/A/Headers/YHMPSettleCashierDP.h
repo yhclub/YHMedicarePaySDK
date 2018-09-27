@@ -21,4 +21,6 @@
 
 -(void)reloadChannelArray:(NSArray *)channelArray;
 
+-(NSInteger)getSectionForVCode;
+-(NSInteger)getSectionForChannel;
 @end

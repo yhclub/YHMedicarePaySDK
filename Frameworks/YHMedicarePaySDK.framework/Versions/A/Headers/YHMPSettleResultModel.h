@@ -10,7 +10,7 @@
 @interface YHMPSettleResultModel : NSObject
 
 @property(nonatomic,copy)NSString *result;//交易结果状态码
-@property(nonatomic,copy)NSString *resultDES;//交易结果说明
+@property(nonatomic,copy)NSString *resultDesc;//交易结果说明
 @property(nonatomic,copy)NSString *amount;//交易金额
 @property(nonatomic,copy)NSString *cardNo;//卡号
 @property(nonatomic,copy)NSString *cardType;//卡类型

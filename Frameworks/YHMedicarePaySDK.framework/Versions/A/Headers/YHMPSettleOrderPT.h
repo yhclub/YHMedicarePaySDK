@@ -26,8 +26,6 @@
 //开始倒计时
 -(void)startCountdown;
 
-//get data
--(CGFloat)texfieldOriginY;
 
 -(NSString *)getValidateCode;//验证码
 
