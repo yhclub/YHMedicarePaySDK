@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'YHCommonSDK', '~> 1.1.0.12'
   s.dependency 'YHOnePaySDK', '~> 1.2.1.12'
-  s.dependency 'SGQRCode', '~> 2.1.8'
+  s.dependency 'SGQRCode', '~> 2.5.4'
   
   
   s.requires_arc = true
