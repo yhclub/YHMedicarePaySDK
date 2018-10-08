@@ -22,5 +22,7 @@
 -(void)reloadChannelArray:(NSArray *)channelArray;
 
 -(NSInteger)getSectionForVCode;
--(NSInteger)getSectionForChannel;
+    
+-(id)getObjectWithIndexPath:(NSIndexPath *)indexPath;
+    
 @end
