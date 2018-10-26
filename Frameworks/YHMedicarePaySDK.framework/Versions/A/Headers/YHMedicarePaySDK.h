@@ -51,10 +51,10 @@
  *  消息来源：->移动医保支付平台 ->商户服务端 ->商户APP ->SDK
  *
  *  @param token     用户令牌
- *  @param userInfo  消息参数，userInfo中有key:ylzSDKParams
+ *  @param ylzSDKParams  消息参数
  *  @return 是否处理，YES表示SDK处理该消息并在处理完成时回调block，NO则商户APP自行处理
  */
-+ (BOOL)processNotification:(NSDictionary *)userInfo
++ (BOOL)processNotification:(NSDictionary *)ylzSDKParams
                   withToken:(NSString *)token;
 
 
