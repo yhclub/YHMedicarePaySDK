@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHMedicarePaySDK'
-  s.version          = '1.0.5'
+  s.version          = '1.0.7'
   s.summary          = '医保移动支付SDK'
 
 # This description is used to generate tags and improve search results.
@@ -32,10 +32,8 @@ Pod::Spec.new do |s|
   s.libraries        = 'z', 'c++', 'sqlite3'
   
 
-  s.dependency 'YHCommonSDK', '~> 1.1.0.12'
-  s.dependency 'YHOnePaySDK', '~> 1.2.1.12'
-  s.dependency 'SGQRCode', '~> 2.5.4'
-  
+  s.dependency 'YHCommonSDK', '~> 1.1.1'
+  s.dependency 'YHOnePaySDK', '~> 1.2.5'
   
   s.requires_arc = true
   
