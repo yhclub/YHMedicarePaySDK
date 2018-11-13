@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <YHCommonSDK/YHCommonConstant.h>
 
 @interface YHMPConstant : NSObject
 
@@ -30,10 +31,11 @@ FOUNDATION_EXPORT CGFloat const YHMPCornerRadius;
 
 FOUNDATION_EXPORT CGFloat const YHMPCellHeight;
 
-
 typedef void(^YHMPPayCompletionBlock)(NSString * respCode,NSString * respMsg,NSDictionary * resultDic);
 
 
 typedef void(^YHMPScrollViewPTBlock)(UIScrollView *scrollView);
+
+
 
 @end
