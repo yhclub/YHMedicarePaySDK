@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   
 
   s.dependency 'YHCommonSDK', '~> 1.1.1'
-  s.dependency 'YHOnePaySDK', '~> 1.2.5'
+  s.dependency 'YHOnePaySDK', '~> 1.2.8'
   
   s.requires_arc = true
   
