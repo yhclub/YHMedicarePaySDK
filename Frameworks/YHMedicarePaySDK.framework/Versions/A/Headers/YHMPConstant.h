@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <YHCommonSDK/YHCommonConstant.h>
 
 @interface YHMPConstant : NSObject
 

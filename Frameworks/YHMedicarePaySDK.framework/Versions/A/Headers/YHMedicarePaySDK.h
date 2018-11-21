@@ -5,7 +5,7 @@
 //  Created by Jagtu on 2018/4/27.
 //  Copyright © 2018年 yh. All rights reserved.
 //
-//  Version 2.0.0  by Jagtu  2018/8/2
+//  Version 1.0.9.2  by Jagtu  2018/11/21
 //
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHMedicarePaySDK/PublicHeader.h>
