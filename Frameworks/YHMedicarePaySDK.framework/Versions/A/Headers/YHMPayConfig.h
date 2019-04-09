@@ -7,18 +7,27 @@
 
 #import <YHOnePaySDK/YHOnePayConfig.h>
 
-
 @interface YHMPayConfig : YHOnePayConfig
 
 /**
  * 应用appId
  */
-@property(nonatomic,copy)NSString * appId;
+@property(nonatomic,copy)NSString *appId;
 
 /**
  * 应用密钥
  */
-@property(nonatomic,copy)NSString * appSecret;
+@property(nonatomic,copy)NSString *appSecret;
+
+/**
+ * 单家医院
+ */
+@property(nonatomic,assign)BOOL isAloneMedical;
+
+/**
+ * 机构名称
+ */
+@property(nonatomic,copy)NSString *medicalName;
 
 /**
  * 商户所属渠道类型，请修改为对应的渠道
@@ -48,5 +57,6 @@
  */
 +(YHMPayConfig *)initWithAPPID:(NSString *)appId appSecret:(NSString *)appSecret channelType:(NSString *)appChannelType platformHost:(NSString *)platformHost;
 
++(YHMPayConfig *)initWithAPPID:(NSString *)appId appSecret:(NSString *)appSecret channelType:(NSString *)appChannelType platformHost:(NSString *)platformHost medicalName:(NSString *)hospName;
 
 @end
