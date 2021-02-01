@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.libraries        = 'z', 'c++', 'sqlite3'
   
 
-  s.dependency 'YHBaseSDK' , '1.1.9'
+  s.dependency 'YHBaseSDK' , '1.1.10'
   s.dependency 'YHCommonSDK' , '1.1.9'
   s.dependency 'YHOnePaySDK' #, '~> 1.3.0'
   
