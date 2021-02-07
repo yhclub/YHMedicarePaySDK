@@ -7,6 +7,7 @@
 //
 //  Version 1.0.9.2  by Jagtu  2018/11/21
 //  Version 1.1.9.1  by Jagtu  2020/07/09
+//  Version 1.2.0.1  by Zhengxl  2021/02/07
 //
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHMedicarePaySDK/PublicHeader.h>
@@ -26,7 +27,7 @@
 
 /**
  *  发起医保结算
- *  ->选择医院 ->选择待结算处方列表 ->确认处方（处方详情） ->结算收银台（完成自费支付） ->结算完成
+ *  ->选择待结算处方列表 ->确认处方（处方详情） ->结算收银台（完成自费支付） ->结算完成
  *
  *  @param token     用户令牌
  *  @param completionBlock 结算结果回调Block。
@@ -77,17 +78,6 @@
  *  注：清除内存缓存里的用户信息！
  */
 + (void)logout;
-
-
-/**
- *  查询待结算
- *  ->展示已结算记录列表页
- *
- *  @param token     用户令牌
- *  @param completionBlock 失败回调Block。主要处理token过期等错误
- */
-+ (void)queryUnSettledRecodeWithToken:(NSString *)token
-                         completion:(YHMPPayCompletionBlock)completionBlock;
 
 @end
 

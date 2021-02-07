@@ -60,4 +60,5 @@
 
 +(YHMPayConfig *)initWithAPPID:(NSString *)appId appSecret:(NSString *)appSecret channelType:(NSString *)appChannelType platformHost:(NSString *)platformHost medicalName:(NSString *)hospName;
 
++(void)getVer;
 @end
