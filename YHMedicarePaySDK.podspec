@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHMedicarePaySDK'
-  s.version          = '1.2.0.4'
+  s.version          = '1.2.0.5'
   s.summary          = '医保移动支付SDK'
 
 # This description is used to generate tags and improve search results.
