@@ -73,10 +73,18 @@
 
 
 /**
+ *  创建统一支付单例服务
+ *
+ *  @return 返回单例对象
+ */
++ (YHMedicarePaySDK *)defaultService;
+
+
+/**
  *  退出
  *  注：清除内存缓存里的用户信息！
  */
-+ (void)logout;
+- (void)logout;
 
 @end
 
