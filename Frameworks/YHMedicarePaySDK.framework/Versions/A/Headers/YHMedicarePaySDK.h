@@ -7,6 +7,7 @@
 //
 //  Version 1.0.9.2  by Jagtu  2018/11/21
 //  Version 1.1.9.1  by Jagtu  2020/07/09
+//  Version 1.2.0.12  by Jagtu  2021/03/16
 //
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHMedicarePaySDK/PublicHeader.h>
