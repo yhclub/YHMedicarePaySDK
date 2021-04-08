@@ -53,6 +53,15 @@ color start
 #endif
 //-----颜色规范.end-----//
 
+
+#define colorFFF4ED [UIColor colorWithHexString:@"#FFF4ED"]
+#define colorFF632F [UIColor colorWithHexString:@"#FF632F"]
+#define colorF3F7FF [UIColor colorWithHexString:@"#F3F7FF"]
+#define colorF6F9FF [UIColor colorWithHexString:@"#F6F9FF"]
+#define color0EBCBC [UIColor colorWithHexString:@"#0EBCBC"]
+#define colorEDFBFB [UIColor colorWithHexString:@"#EDFBFB"]
+
+
 /*
 end
  */
