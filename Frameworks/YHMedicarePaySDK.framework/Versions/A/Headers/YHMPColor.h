@@ -60,6 +60,9 @@ color start
 #define colorF6F9FF [UIColor colorWithHexString:@"#F6F9FF"]
 #define color0EBCBC [UIColor colorWithHexString:@"#0EBCBC"]
 #define colorEDFBFB [UIColor colorWithHexString:@"#EDFBFB"]
+#define color0086FA [UIColor colorWithHexString:@"#0086FA"]
+#define color196FFA [UIColor colorWithHexString:@"#196FFA"]
+
 
 
 /*
